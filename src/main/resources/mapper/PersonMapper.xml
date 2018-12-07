@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="com.jiyx.test.test.repository.PersonMapper">
+
+    <select id="findByName" resultType="com.jiyx.test.test.entity.Person">
+        select * from person where name = #{name}
+    </select>
+
+    <select id="findById" resultType="com.jiyx.test.test.entity.Person">
+        select * from person where id = #{id}
+    </select>
+</mapper>
